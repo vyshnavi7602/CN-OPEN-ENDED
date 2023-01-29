@@ -8,8 +8,10 @@ void main()
   
   k = 3; //key value is set to 3
   
-  printf("INPUT MESSAGE IS: %s", inp);
+  printf("ENTER MESSAGE:\n");
+  scanf("%s", inp);
   
+  printf("CIPHER TEXT IS:\n");
   for(i = 0; i < strlen(inp); i++)
   {
     temp = inp[i] - 97;
@@ -22,7 +24,7 @@ void main()
       else if(temp == 25)
         temp = -1;
     }
-    printf("CIPHER TEXT IS: %c\t", temp + 97 +k);
+    printf("%c", temp + 97 +k);
  }
  
 }
