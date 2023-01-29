@@ -3,8 +3,11 @@
 
 void main()
 {
-  int i, temp;
+  int i, temp, k;
   char inp[20];
+  
+  k = 3; //key value is set to 3
+  
   printf("INPUT MESSAGE IS: %s", inp);
   
   for(i = 0; i < strlen(inp); i++)
@@ -19,7 +22,7 @@ void main()
       else if(temp == 25)
         temp = -1;
     }
-    printf("CIPHER TEXT IS: %c\t", temp + 97 +3);
+    printf("CIPHER TEXT IS: %c\t", temp + 97 +k);
  }
  
 }
